@@ -1,5 +1,6 @@
 package br.com.fag;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Aposta {
@@ -19,7 +20,7 @@ public class Aposta {
   private double rateioQuatroAcertos;
   private String cidade;
   private double acumuladosSeisAcertos;
-  private double arrecadacaoTotal;
+  private BigDecimal arrecadacaoTotal;
   private double estimativaPremio;
   private double acumuladoSorteio;
   private String observacao;
