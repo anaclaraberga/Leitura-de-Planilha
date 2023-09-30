@@ -17,17 +17,17 @@ public class Aposta {
   private int bola4;
   private int bola5;
   private int bola6;
-  private double ganhadoreSeisAcertos;
-  private double ganhadoreCincoAcertos;
-  private double ganhadoreQuatroAcertos;
-  private double rateioSeisAcertos;
-  private double rateioCincoAcertos;
-  private double rateioQuatroAcertos;
+  private int ganhadoreSeisAcertos;
   private String cidade;
-  private double acumuladosSeisAcertos;
+  private BigDecimal rateioSeisAcertos;
+  private int ganhadoreCincoAcertos;
+  private BigDecimal rateioCincoAcertos;
+  private int ganhadoreQuatroAcertos;
+  private BigDecimal rateioQuatroAcertos;
+  private BigDecimal acumuladosSeisAcertos;
   private BigDecimal arrecadacaoTotal;
-  private double estimativaPremio;
-  private double acumuladoSorteio;
+  private BigDecimal estimativaPremio;
+  private BigDecimal acumuladoSorteio;
   private String observacao;
 
 }
