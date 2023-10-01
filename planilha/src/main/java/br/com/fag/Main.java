@@ -7,7 +7,10 @@ public class Main {
 
         System.out.println("hello");
 
-        GerenciadorApostas sut = new GerenciadorApostas();
-        sut.criar();
+        GerenciadorApostas apostasExcel = new GerenciadorApostas();
+        
+        // List<Aposta> apostas = apostasExcel.criar();
+
+        // apostasExcel.imprimir(apostas);
     }
 }

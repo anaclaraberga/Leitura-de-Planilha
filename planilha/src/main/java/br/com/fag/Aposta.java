@@ -9,7 +9,8 @@ import lombok.Data;
 @Data
 @Builder
 public class Aposta {
-  private double concurso;
+  
+  private int concurso;
   private Date data;
   private int bola1;
   private int bola2;
