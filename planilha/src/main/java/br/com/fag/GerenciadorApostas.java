@@ -42,5 +42,4 @@ public class GerenciadorApostas {
   public void imprimir(List<Aposta> apostas) {
     apostas.forEach(System.out::println);
   }
-
 }
