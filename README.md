@@ -5,15 +5,25 @@ Desenvolvimento de uma aplicação para realizar a leitura dos sorteios da Mega 
 ## Estruturas desejadas
 
   -> A quantidade de vezes que cada número foi sorteado;
+  
   -> Quantos concursos não houve apostador que acertou as 6 dezenas;
+  
   -> O menor valor pago para apostas com 4 dezenas sorteadas;
+  
   -> O menor valor pago para apostas com 5 dezenas sorteadas;
+  
   -> O menor valor pago para apostas com 6 dezenas sorteadas;
+  
   -> O maior valor pago para apostas com 4 dezenas sorteadas;
+  
   -> O maior valor pago para apostas com 5 dezenas sorteadas;
+  
   -> O maior valor pago para apostas com 6 dezenas sorteadas;
+  
   -> A quantidade de ganhadores com 4 dezenas em todos os concursos;
+  
   -> A quantidade de ganhadores com 5 dezenas em todos os concursos;
+  
   -> A quantidade de ganhadores com 6 dezenas em todos os concursos;
 
 Também deverá ter uma parte da aplicação para que o usuário possa inserir 6 dezenas, mostrando se houve algum concurso que foram sorteadas essas dezenas. Em caso de ter sido sorteado, mostrar o número do concurso e a data que ocorreu. Caso não tenha sido sorteado, informar o usuário.
