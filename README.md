@@ -1,18 +1,21 @@
-## Getting Started
+ ## Objetivo principal
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desenvolvimento de uma aplicação para realizar a leitura dos sorteios da Mega Sena, de todos os concursos realizados.
 
-## Folder Structure
+## Estruturas desejadas
 
-The workspace contains two folders by default, where:
+  > A quantidade de vezes que cada número foi sorteado;
+  > Quantos concursos não houve apostador que acertou as 6 dezenas;
+  > O menor valor pago para apostas com 4 dezenas sorteadas;
+  > O menor valor pago para apostas com 5 dezenas sorteadas;
+  > O menor valor pago para apostas com 6 dezenas sorteadas;
+  > O maior valor pago para apostas com 4 dezenas sorteadas;
+  > O maior valor pago para apostas com 5 dezenas sorteadas;
+  > O maior valor pago para apostas com 6 dezenas sorteadas;
+  > A quantidade de ganhadores com 4 dezenas em todos os concursos;
+  > A quantidade de ganhadores com 5 dezenas em todos os concursos;
+  > A quantidade de ganhadores com 6 dezenas em todos os concursos;
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Também deverá ter uma parte da aplicação para que o usuário possa inserir 6 dezenas, mostrando se houve algum concurso que foram sorteadas essas dezenas. Em caso de ter sido sorteado, mostrar o número do concurso e a data que ocorreu. Caso não tenha sido sorteado, informar o usuário.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+E por fim, deverá ter um sorteio aleatório de 6 dezenas pela aplicação. Esse sorteio aleatório deverá fazer a verificação do item anterior.
