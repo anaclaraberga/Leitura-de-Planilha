@@ -1,6 +1,8 @@
 package br.com.fag;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 
 import lombok.Builder;
@@ -11,7 +13,7 @@ import lombok.Data;
 public class Aposta {
   
   private int concurso;
-  private Date data;
+  private LocalDate data;
   private int bola1;
   private int bola2;
   private int bola3;
@@ -30,5 +32,7 @@ public class Aposta {
   private BigDecimal estimativaPremio;
   private BigDecimal acumuladoSorteio;
   private String observacao;
+
+  private ArrayList<Integer> bolasSorteadas;
 
 }
