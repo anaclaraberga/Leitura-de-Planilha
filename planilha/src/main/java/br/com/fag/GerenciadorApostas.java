@@ -2,33 +2,25 @@ package br.com.fag;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.jcp.xml.dsig.internal.dom.Utils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class GerenciadorApostas {
-
+  List<Aposta> apostasExcel = new ArrayList<>();
   public static void main(String[] args) {
     try {
       FileInputStream arquivoXlsx = new FileInputStream(new File("planilha/src/main/resources/Mega-Sena.xlsx"));
       XSSFWorkbook workbook = new XSSFWorkbook(arquivoXlsx);
       XSSFSheet sheet = workbook.getSheetAt(0);
-      List<Aposta> apostasExcel = new ArrayList<>();
       Iterator<?> fileiras = sheet.rowIterator();
-
-      Aposta apostas = new Aposta(0, null, 0, 0, 0,
-      0, 0, 0, 0, null, null,
-      0, null, 0, null,
-      null, null, null, null, null, null);
 
       while (fileiras.hasNext()) {
         XSSFRow linhas = (XSSFRow) fileiras.next();
@@ -40,7 +32,7 @@ public class GerenciadorApostas {
           
           while (celulas.hasNext()) {
             XSSFCell celula = (XSSFCell) celulas.next();
-            System.out.println(celula.toString());
+            // System.out.println(celula.toString());
 
             switch (celula.getColumnIndex()) {
               case 0:
@@ -89,7 +81,8 @@ public class GerenciadorApostas {
     }
   }
 
-  public void imprimir(List<Aposta> apostas) {
-    apostas.forEach(System.out::println);
-  }
+  // public void imprimir(List<Aposta> apostas) {
+  //   apostas.forEach(System.out::println);
+  // }
+
 }
