@@ -4,13 +4,11 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 @Data
-@Builder
 @Getter
 @Setter
 public class Aposta {
@@ -23,7 +21,7 @@ public class Aposta {
   private int bola4;
   private int bola5;
   private int bola6;
-  private int ganhadoreSeisAcertos;
+  private ArrayList<Integer> ganhadoreSeisAcertos;
   private String cidade;
   private BigDecimal rateioSeisAcertos;
   private int ganhadoreCincoAcertos;
@@ -36,6 +34,11 @@ public class Aposta {
   private BigDecimal acumuladoSorteio;
   private String observacao;
 
-  private ArrayList<Integer> bolasSorteadas;
+  private ArrayList<Integer> bolasTotal;
+
+  public Aposta() {
+    this.bolasTotal = new ArrayList<>();
+    this.ganhadoreSeisAcertos = new ArrayList<>();
+  }
 
 }
