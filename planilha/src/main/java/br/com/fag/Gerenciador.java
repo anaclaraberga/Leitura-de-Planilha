@@ -74,6 +74,9 @@ public class Gerenciador {
                 break;
               case 12:
                 break;
+              case 14:
+                Estrutura.menorValorQuatroDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
+                break;
             }
           }
 
