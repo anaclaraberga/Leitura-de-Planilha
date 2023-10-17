@@ -70,6 +70,10 @@ public class Gerenciador {
                 break;
               case 10:
                 break;
+              case 11:
+                break;
+              case 12:
+                break;
             }
           }
 

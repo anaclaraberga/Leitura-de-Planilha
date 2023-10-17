@@ -24,6 +24,9 @@ public class Estrutura {
         }
     }
 
+    public static void menorValorQuatroDezenas(Aposta aposta) {
+
+    }
     public static void imprimir() {
         System.out.println("Quantas vezes cada número foi sorteado =" + Resultado.quantasVezesCadaNumeroFoiSorteado);
         System.out.println("--------------------------------------------------------------------------------------------------------");

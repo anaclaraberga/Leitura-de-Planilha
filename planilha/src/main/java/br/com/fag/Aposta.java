@@ -23,22 +23,22 @@ public class Aposta {
   private int bola6;
   private ArrayList<Integer> ganhadoreSeisAcertos;
   private String cidade;
-  private BigDecimal rateioSeisAcertos;
-  private int ganhadoreCincoAcertos;
-  private BigDecimal rateioCincoAcertos;
+  private ArrayList<Integer> ganhadoreCincoAcertos;
   private int ganhadoreQuatroAcertos;
-  private BigDecimal rateioQuatroAcertos;
   private BigDecimal acumuladosSeisAcertos;
   private BigDecimal arrecadacaoTotal;
   private BigDecimal estimativaPremio;
   private BigDecimal acumuladoSorteio;
   private String observacao;
+  private Rateio[] valorRateio;
 
   private ArrayList<Integer> bolasTotal;
 
   public Aposta() {
     this.bolasTotal = new ArrayList<>();
     this.ganhadoreSeisAcertos = new ArrayList<>();
+    this.ganhadoreCincoAcertos = new ArrayList<>();
+    
   }
 
 }
