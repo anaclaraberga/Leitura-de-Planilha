@@ -69,13 +69,18 @@ public class Gerenciador {
                 aposta.setCidade(celula.toString());
                 break;
               case 10:
+                Estrutura.menorValorSeisDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
+                Estrutura.maiorValorSeisDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
                 break;
               case 11:
                 break;
               case 12:
+                Estrutura.menorValorCincoDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
+                Estrutura.maiorValorCincoDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
                 break;
               case 14:
                 Estrutura.menorValorQuatroDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
+                Estrutura.maiorValorQuatroDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
                 break;
             }
           }
