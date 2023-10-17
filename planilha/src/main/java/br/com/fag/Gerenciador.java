@@ -64,6 +64,7 @@ public class Gerenciador {
                 break;
               case 8:
                 aposta.getGanhadoreSeisAcertos().add((int) Math.floor(Double.parseDouble(celula.toString())));
+                Estrutura.ganhadoresSeisDezenas((int) Math.floor(Double.parseDouble(celula.toString())));
                 break;
               case 9:
                 aposta.setCidade(celula.toString());
@@ -73,10 +74,14 @@ public class Gerenciador {
                 Estrutura.maiorValorSeisDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
                 break;
               case 11:
+                Estrutura.ganhadoresCincoDezenas((int) Math.floor(Double.parseDouble(celula.toString())));
                 break;
               case 12:
                 Estrutura.menorValorCincoDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
                 Estrutura.maiorValorCincoDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));
+                break;
+              case 13:
+                Estrutura.ganhadoresQuatroDezenas((int) Math.floor(Double.parseDouble(celula.toString())));
                 break;
               case 14:
                 Estrutura.menorValorQuatroDezenas(Long.parseLong(Estrutura.limpaString(celula.toString())));

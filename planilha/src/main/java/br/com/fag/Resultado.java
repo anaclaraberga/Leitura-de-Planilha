@@ -12,4 +12,7 @@ public class Resultado {
   public static Long maiorValorQuatroDezenas = 0L;
   public static Long maiorValorCincoDezenas = 0L;
   public static Long maiorValorSeisDezenas = 0L;
+  public static Integer ganhadoresSeisDezenas = 0;
+  public static Integer ganhadoresCincoDezenas = 0;
+  public static Integer ganhadoresQuatroDezenas = 0;
 }

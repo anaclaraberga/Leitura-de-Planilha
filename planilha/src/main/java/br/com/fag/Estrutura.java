@@ -60,6 +60,18 @@ public class Estrutura {
 		}
 	}
 
+	public static void ganhadoresSeisDezenas(Integer numero) {
+		Resultado.ganhadoresSeisDezenas += numero;
+	}
+
+	public static void ganhadoresCincoDezenas(Integer numero) {
+		Resultado.ganhadoresCincoDezenas += numero;
+	}
+
+	public static void ganhadoresQuatroDezenas(Integer numero) {
+		Resultado.ganhadoresQuatroDezenas += numero;
+	}
+
 	public static void imprimir() {
 		System.out.println("Quantas vezes cada número foi sorteado =" + Resultado.quantasVezesCadaNumeroFoiSorteado);
 		System.out.println(
@@ -90,6 +102,18 @@ public class Estrutura {
 				"--------------------------------------------------------------------------------------------------------");
 		System.out.println(
 				"Maior valor para apostas com 4 dezenas =" + Resultado.maiorValorQuatroDezenas);
+				System.out.println(
+				"--------------------------------------------------------------------------------------------------------");
+		System.out.println(
+				"Ganhadores com 4 dezenas =" + Resultado.ganhadoresQuatroDezenas);
+				System.out.println(
+				"--------------------------------------------------------------------------------------------------------");
+		System.out.println(
+				"Ganhadores com 5 dezenas =" + Resultado.ganhadoresCincoDezenas);
+				System.out.println(
+				"--------------------------------------------------------------------------------------------------------");
+		System.out.println(
+				"Ganhadores com 6 dezenas =" + Resultado.ganhadoresSeisDezenas);
 	}
 
 	public static String limpaString(String string) {
